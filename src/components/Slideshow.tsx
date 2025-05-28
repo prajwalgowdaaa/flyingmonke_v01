@@ -93,18 +93,18 @@ const Slideshow: React.FC = () => {
       ))}
 
       {/* Navigation arrows */}
-      {/* Hidden on small screens, visible on medium and larger screens */}
-      <div className="z-20 hidden md:block">
+      {/* Positioned at bottom right on medium and larger screens */}
+      <div className="absolute bottom-4 right-4 z-20 hidden md:flex space-x-2">
         <button
           onClick={goToPrevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-colors z-30"
+          className="bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-colors z-30"
           aria-label="Previous slide"
         >
           <ChevronLeft size={24} />
         </button>
         <button
           onClick={goToNextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-colors z-30"
+          className="bg-white/20 hover:bg-white/40 text-white p-2 rounded-full transition-colors z-30"
           aria-label="Next slide"
         >
           <ChevronRight size={24} />
