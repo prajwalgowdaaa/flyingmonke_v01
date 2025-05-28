@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import ProjectCard from "../components/ProjectCard";
-import StatCard from "../components/StatCard";
 import NewsCard from "../components/NewsCard";
 import Slideshow from "../components/Slideshow";
 import ExpandableInfo from "../components/ExpandableInfo";

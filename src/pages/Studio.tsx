@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-import StatCard from "../components/StatCard";
 import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 import {
   Dialog,
