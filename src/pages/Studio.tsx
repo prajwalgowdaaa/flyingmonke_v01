@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin, X } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -27,13 +27,13 @@ const teamMembers: TeamMember[] = [
   {
     name: "Suhas",
     title: "Architect",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3",
+    image: "https://images.pexels.com/photos/32388468/pexels-photo-32388468.jpeg?auto=compress",
     description: "Suhas brings a unique blend of artistic flair and technical precision to every project. Specializing in interior architecture, he transforms ordinary spaces into extraordinary experiences. His meticulous attention to detail and commitment to client satisfaction make him an invaluable asset to our team.",
   },
   {
     name: "Sakshi Pandey",
     title: "Architect",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3",
+    image: "https://images.pexels.com/photos/32388223/pexels-photo-32388223.jpeg?auto=compress",
     description: "Sakshi is our organizational powerhouse, ensuring every project runs smoothly from conception to completion. With a background in construction management, she expertly navigates complex timelines and budgets, keeping our team on track and delivering results that exceed expectations.",
   },  
 ];
@@ -166,59 +166,59 @@ const Studio = () => {
       </Dialog>
 
       {/* Footer - Updated address and email */}
-     <footer className="section-padding border-t border-gray-200">
-             <div className="container-custom">
-               <div className="grid md:grid-cols-2 gap-12">
-                 <div>
-                   <div className="mb-4 text-xl font-medium tracking-tighter">flying<span className="font-bold">monké</span></div>
-                   <address className="not-italic text-sm text-gray-600 mb-6">
-                     Bengaluru, India
-                   </address>
-                   <div className="text-sm text-gray-600 mb-6">
-                     <p>+91-9535696698</p>
-                     <p>+91-9606165475</p>
-                   </div>
-                 </div>
-                 <div className="md:text-right">
-                   <h3 className="text-2xl mb-4">workflyingmonke@gmail.com</h3>
-                   <div className="flex md:justify-end space-x-4 mb-6">
-                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
-                       <Instagram size={20} />
-                       <span className="sr-only">Instagram</span>
-                     </a>
-                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
-                       <Facebook size={20} />
-                       <span className="sr-only">Facebook</span>
-                     </a>                
-                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
-                       <Twitter size={20} />
-                       <span className="sr-only">Twitter</span>
-                     </a>
-                     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
-                       <Linkedin size={20} />
-                       <span className="sr-only">LinkedIn</span>
-                     </a>
-                     {/* 
-                     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
-                       <Youtube size={22} />
-                       <span className="sr-only">Youtube</span>
-                     </a>
-                     */}
-                   </div>
-                   <div className="flex flex-col md:items-end space-y-1 text-sm">
-                     <Link to="/" className="hover:underline">Home</Link>
-                     <Link to="/projects" className="hover:underline">Projects</Link>
-                     <Link to="/studio" className="hover:underline">Studio</Link>
-                     <Link to="/blog" className="hover:underline">Insights</Link>
-                     <Link to="/contact" className="hover:underline">Contact</Link>
-                   </div>
-                 </div>
-               </div>
-               <div className="mt-16 pt-6 border-t border-gray-200 text-xs text-gray-400">
-                 © flyingmonké, {new Date().getFullYear()} . All rights reserved
-               </div>
-             </div>
-           </footer>
+      <footer className="section-padding border-t border-gray-200">
+        <div className="container-custom">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <div className="mb-4 text-xl font-medium tracking-tighter">flying<span className="font-bold">monké</span></div>
+              <address className="not-italic text-sm text-gray-600 mb-6">
+                Bengaluru, India
+              </address>
+              <div className="text-sm text-gray-600 mb-6">
+                <p>+91-9535696698</p>
+                <p>+91-9606165475</p>
+              </div>
+            </div>
+            <div className="md:text-right">
+              <h3 className="mb-4 text-xl font-semibold">workflyingmonke@gmail.com</h3>
+              <div className="flex md:justify-end space-x-4 mb-6">
+                <a href="https://www.instagram.com/flyingmonke__/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
+                  <Instagram size={20} />
+                  <span className="sr-only">Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/people/flyingmonk%C3%A9/61576847467953/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
+                  <Facebook size={20} />
+                  <span className="sr-only">Facebook</span>
+                </a>                
+                <a href="https://x.com/flyingmonke_" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
+                  <X size={22} />
+                  <span className="sr-only">Twitter</span>
+                </a>
+                <a href="https://www.linkedin.com/company/flyingmonkecreativelabs" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
+                  <Linkedin size={20} />
+                  <span className="sr-only">LinkedIn</span>
+                </a>
+                {/* 
+                <a href="https://www.youtube.com/@theflyingmonke" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
+                  <Youtube size={22} />
+                  <span className="sr-only">Youtube</span>
+                </a>
+                */}
+              </div>
+              <div className="flex flex-col md:items-end space-y-1 text-sm">
+                <Link to="/" className="hover:underline">Home</Link>
+                <Link to="/projects" className="hover:underline">Projects</Link>
+                <Link to="/studio" className="hover:underline">Studio</Link>
+                <Link to="/blog" className="hover:underline">Insights</Link>
+                <Link to="/contact" className="hover:underline">Contact</Link>
+              </div>
+            </div>
+          </div>
+          <div className="mt-16 pt-6 border-t border-gray-200 text-xs text-gray-400">
+            © flyingmonké, {new Date().getFullYear()} . All rights reserved
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -13,6 +13,7 @@ import News from "./pages/News";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import CursorFollower from "./components/CursorFollower";
+import HarborFrontDetail from "./pages/HarborFrontDetail";
 
 // Create a new QueryClient instance
 const queryClient = new QueryClient();

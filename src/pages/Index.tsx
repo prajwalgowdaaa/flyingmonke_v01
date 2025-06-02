@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectCard";
 import NewsCard from "../components/NewsCard";
 import Slideshow from "../components/Slideshow";
 import ExpandableInfo from "../components/ExpandableInfo";
-import { Facebook, Instagram, Twitter, Linkedin, Youtube } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin, Youtube, X } from "lucide-react";
 
 const Index = () => {
   return (
@@ -20,7 +20,7 @@ const Index = () => {
         </div>
         <div className="container-custom relative z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-normal max-w-3xl leading-tight animate-fade-in-fast">
-            Redefining architectural design to forge inspiring, enduring, and sustainable environments
+          Redefining architectural design through Process, Experience, and the Art of Storytelling
           </h1>
         </div>
       </section>
@@ -31,12 +31,12 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-16">
             <div>
               <h2 className="section-heading">
-                The architectural paradigm of flying<span className="font-bold">monké</span> centers on aspirational design realized through innovative, contextually sensitive solutions, creating enduring spaces that fundamentally enhance lives
+              flying<span className="font-bold">monké</span>'s Architectural paradigm centers on aspirational, contextually sensitive design - rooted in narrative, liberated from convention, and driven to creating enduring spaces that elevate everyday life.
               </h2>
             </div>
             <div className="space-y-6">
               <p className="text-gray-700">
-                We are a multidisciplinary startup and every project is a chance to push creative boundaries, delivering designs that balance compelling expression with optimal functionality. Sustainability and community well-being are core to our contextual approach. 
+              As a multidisciplinary startup, we approach each project as an opportunity to push creative boundaries—delivering context-driven designs that unite expressive form, functional clarity, and sustainable impact. 
               </p>
               
               <div>
@@ -191,26 +191,26 @@ const Index = () => {
               </div>
             </div>
             <div className="md:text-right">
-              <h3 className="text-2xl mb-4">workflyingmonke@gmail.com</h3>
+              <h3 className="mb-4 text-xl font-semibold">workflyingmonke@gmail.com</h3>
               <div className="flex md:justify-end space-x-4 mb-6">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
+                <a href="https://www.instagram.com/flyingmonke__/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
                   <Instagram size={20} />
                   <span className="sr-only">Instagram</span>
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
+                <a href="https://www.facebook.com/people/flyingmonk%C3%A9/61576847467953/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
                   <Facebook size={20} />
                   <span className="sr-only">Facebook</span>
                 </a>                
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
-                  <Twitter size={20} />
+                <a href="https://x.com/flyingmonke_" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
+                  <X size={22} />
                   <span className="sr-only">Twitter</span>
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
+                <a href="https://www.linkedin.com/company/flyingmonkecreativelabs" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
                   <Linkedin size={20} />
                   <span className="sr-only">LinkedIn</span>
                 </a>
                 {/* 
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
+                <a href="https://www.youtube.com/@theflyingmonke" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">
                   <Youtube size={22} />
                   <span className="sr-only">Youtube</span>
                 </a>
