@@ -33,6 +33,7 @@ function App() {
               <Route path="/projects/sandfjord-quarter" element={<ProjectDetail />} />
               <Route path="/projects/noromsvien" element={<ProjectDetail />} />
               <Route path="/projects/kongsberg-ii" element={<ProjectDetail />} />
+              <Route path="/projects/harbor-front-detail" element={<HarborFrontDetail />} />
               <Route path="/projects/fjord-museum" element={<ProjectDetail />} />
               <Route path="/projects/the-atrium" element={<ProjectDetail />} />
               <Route path="/projects/community-church" element={<ProjectDetail />} />
