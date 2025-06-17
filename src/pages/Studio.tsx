@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Linkedin, X } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+// Removed Dialog imports as they are no longer needed
+// import {
+//   Dialog,
+//   DialogContent,
+//   DialogDescription,
+//   DialogHeader,
+//   DialogTitle,
+// } from "@/components/ui/dialog";
 
 interface TeamMember {
   name: string;
@@ -39,13 +40,15 @@ const teamMembers: TeamMember[] = [
 ];
 
 const Studio = () => {
-  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  // Removed state for selectedMember and isDialogOpen as they are no longer needed
+  // const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
+  // const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-  const handleMemberClick = (member: TeamMember) => {
-    setSelectedMember(member);
-    setIsDialogOpen(true);
-  };
+  // Removed handleMemberClick function as it is no longer needed
+  // const handleMemberClick = (member: TeamMember) => {
+  //   setSelectedMember(member);
+  //   setIsDialogOpen(true);
+  // };
 
   return (
     <div className="min-h-screen">
@@ -118,8 +121,8 @@ const Studio = () => {
             {teamMembers.map((member, index) => (
               <div 
                 key={index} 
-                className="team-member cursor-pointer" 
-                onClick={() => handleMemberClick(member)}
+                className="team-member" // Removed cursor-pointer class
+                // Removed onClick handler
               >
                 <div className="relative overflow-hidden group">
                   <div className="aspect-[3/4] w-full">
@@ -138,20 +141,20 @@ const Studio = () => {
         </div>
       </section>
 
-      {/* Team Member Dialog */}
+      {/* Team Member Dialog - Removed this entire section */}
+      {/*
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-        <DialogContent className="sm:max-w-[600px] overflow-auto p-4 md:p-6"> {/* Added padding here */}
+        <DialogContent className="sm:max-w-[600px] overflow-auto p-4 md:p-6">
           {selectedMember && (
-            <div className="flex flex-col"> {/* Always stack vertically */}
-              <div className="w-full aspect-[3/4] overflow-hidden"> {/* Image takes full width */}
+            <div className="flex flex-col">
+              <div className="w-full aspect-[3/4] overflow-hidden">
                 <img 
                   src={selectedMember.image} 
                   alt={selectedMember.name} 
                   className="w-full h-full object-cover object-center"
                 />
               </div>
-              {/* Removed padding from this div and added to DialogContent */}
-              <div className="w-full pt-4 md:pt-6"> {/* Text content takes full width and adds top padding */}
+              <div className="w-full pt-4 md:pt-6">
                 <DialogHeader>
                   <DialogTitle className="text-2xl font-semibold">{selectedMember.name}</DialogTitle>
                   <DialogDescription className="text-base text-gray-600">
@@ -164,6 +167,7 @@ const Studio = () => {
           )}
         </DialogContent>
       </Dialog>
+      */}
 
       {/* Footer - Updated address and email */}
       <footer className="section-padding border-t border-gray-200">
