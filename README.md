@@ -37,10 +37,10 @@ Follow these steps to set up and run the project locally:
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/prajwalgowdaaa/flyingmonke_v01
     cd flyingmonke_v01
     ```
-    (Replace `<repository-url>` with the actual URL of your repository)
+    
 
 2.  **Install dependencies:**
     ```bash
